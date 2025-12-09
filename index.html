@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آزمون زبان عربی - پایه هشتم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <i class="fas fa-language logo"></i>
+            <div>
+                <h1>آزمون زبان عربی - پایه هشتم</h1>
+                <p class="subtitle">آزمون تعاملی زبان عربی با نمایش سریع پاسخ‌ها</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>آزمون تعاملی زبان عربی</h2>
+            <p>آزمون زیر شامل سوالات چندگزینه‌ای زبان عربی پایه هشتم است. با انتخاب هر گزینه، پاسخ صحیح بلافاصله نمایش داده می‌شود. در پایان آزمون می‌توانید نتایج خود را مشاهده کنید.</p>
+            <button id="startQuizBtn" class="btn"><i class="fas fa-play-circle"></i> شروع آزمون</button>
+        </section>
+        
+        <h2 class="section-title">آزمون زبان عربی پایه هشتم</h2>
+        
+        <!-- بخش آزمون -->
+        <div id="quizContainer" class="quiz-container">
+            <div class="quiz-header">
+                <h3 class="question-counter">سوال 1 از 5</h3>
+                <div class="quiz-info">
+                    <span>نمره: <span id="score">0</span></span>
+                    <span>صحیح: <span id="correctCount">0</span></span>
+                    <span>غلط: <span id="incorrectCount">0</span></span>
+                </div>
+            </div>
+            
+            <div id="questionContainer">
+                <!-- سوالات به صورت دینامیک لود می‌شوند -->
+            </div>
+            
+            <div class="quiz-navigation">
+                <button id="prevBtn" class="navigation-btn" disabled>
+                    <i class="fas fa-arrow-right"></i> سوال قبلی
+                </button>
+                <button id="nextBtn" class="navigation-btn">
+                    سوال بعدی <i class="fas fa-arrow-left"></i>
+                </button>
+                <button id="finishBtn" class="navigation-btn">
+                    <i class="fas fa-flag-checkered"></i> پایان آزمون
+                </button>
+            </div>
+        </div>
+        
+        <!-- بخش نتایج -->
+        <div id="quizSummary" class="quiz-summary">
+            <h2 class="section-title">نتایج آزمون</h2>
+            
+            <div class="score-circle">
+                <div class="score-value" id="finalScore">0</div>
+                <div class="score-text">از 100</div>
+            </div>
+            
+            <h3>عملکرد شما در آزمون</h3>
+            <p id="performanceText" style="margin: 1rem 0 2rem; color: #555; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
+                متن عملکرد شما بر اساس نمره
+            </p>
+            
+            <div class="results-details">
+                <div class="result-item">
+                    <h4>سوالات پاسخ داده شده</h4>
+                    <div class="value" id="answeredCount">0</div>
+                    <p>از 5 سوال</p>
+                </div>
+                
+                <div class="result-item">
+                    <h4>پاسخ‌های صحیح</h4>
+                    <div class="value" id="finalCorrectCount">0</div>
+                    <p>درصد: <span id="correctPercentage">0</span>%</p>
+                </div>
+                
+                <div class="result-item">
+                    <h4>پاسخ‌های غلط</h4>
+                    <div class="value" id="finalIncorrectCount">0</div>
+                    <p>درصد: <span id="incorrectPercentage">0</span>%</p>
+                </div>
+            </div>
+            
+            <button id="restartQuizBtn" class="btn" style="margin-top: 2rem;">
+                <i class="fas fa-redo-alt"></i> آزمون مجدد
+            </button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>آموزش زبان عربی - عرب سل</h3>
+            <p>ساخته شده توسط سپهر غفاریان جم 1404</p>
+            <div class="footer-links">
+                <a href="#"><i class="fas fa-shield-alt"></i> حریم خصوصی</a>
+                <a href="#"><i class="fas fa-file-contract"></i> شرایط استفاده</a>
+                <a href="#"><i class="fas fa-envelope"></i> تماس با ما</a>
+            </div>
+            <p class="copyright">این وبسایت برای کمک به دانش‌آموزان پایه هشتم در یادگیری زبان عربی طراحی شده است.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
